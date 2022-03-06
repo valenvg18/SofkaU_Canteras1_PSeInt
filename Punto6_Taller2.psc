@@ -37,10 +37,12 @@ Proceso Punto6_Taller2
 	
 	
 	Escribir "TALLER DE MOTOS EL MAQUINISTA";
+	Escribir "--------------------------------------";
 	Escribir "¿Que solicitud desea realizar?";
 	Escribir "1. Moto para ingresar al taller";
 	Escribir "2. Moto para darle salida del taller";
 	leer solicitud;
+	Limpiar Pantalla;
 	
 	Segun solicitud Hacer
 		1:
@@ -61,81 +63,99 @@ Proceso Punto6_Taller2
 				Escribir "¿Cuál es el nombre completo del propietario de la moto?";
 				Leer nombre;
 				
+				Limpiar Pantalla;
 				Escribir "¿Cuáles fueron las observaciones por parte del propietario de la moto?";
 				Leer observaciones;
+				Escribir "--------------------------------------------------------------------------";
 				
 				Escribir "Según las observaciones del propietario, la razón por la cual la moto ingreso al taller, se puede clasificar como:";
 				Escribir "1. Mantenimiento General";
 				Escribir "2. Problema en el motor";
 				Escribir "3. Problemas con los frenos o cambio de pastas";
-				Escribir "4. Animalías con el filtro o cambio de este";
+				Escribir "4. Anomalías con el filtro o cambio de este";
 				Escribir "5. Problema en la cadena";
 				Leer razon;
+				Limpiar Pantalla;
 				
 				Segun razon Hacer
 					1:
 						Escribir "¿La moto solo necesitó mantenimineto general?";
 						Escribir "(Responder Verdadero o Falso según el caso)";
 						leer respuesta;
+						Escribir "--------------------------------------------------------------";
 						Si respuesta = Verdadero Entonces
 							Escribir "Describa el mantenimiento general que se le realizará a la moto";
 							leer mantenimiento;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						SiNo
 							Escribir "Describa la novedad encontrada en la motocicleta";
 							Leer novedad;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						FinSi
 					2:
 						Escribir "¿La moto solo tuvo problemas referente al motor o su correcto funcionamiento?";
 						Escribir "(Responder Verdadero o Falso según el caso)";
 						leer respuesta;
+						Escribir "--------------------------------------------------------------";
 						Si respuesta = Verdadero Entonces
 							Escribir "Describa el daño del motor que presentaba la moto";
 							leer motor;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						SiNo
 							Escribir "Describa la novedad encontrada en la motocicleta";
 							Leer novedad;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						FinSi
 					3:
 						Escribir "¿La moto solo tuvo problemas referente a los frenos o se realizará solo cambio de pastas?";
 						Escribir "(Responder Verdadero o Falso según el caso)";
 						leer respuesta;
+						Escribir "--------------------------------------------------------------";
 						Si respuesta = Verdadero Entonces
 							Escribir "Especificar el problema de frenos detectado en la moto o si es referente al cambio de pastas, especificar la cantidad cambiada y por cuales se cambio";
 							leer frenos;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						SiNo
 							Escribir "Describa la novedad encontrada en la motocicleta";
 							Leer novedad;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						FinSi
 					4:
 						Escribir "¿La moto solo tuvo anomalías refrente al filtro o solo se le realizará cambio de este?";
 						Escribir "(Responder Verdadero o Falso según el caso)";
 						leer respuesta;
+						Escribir "--------------------------------------------------------------";
 						Si respuesta = Verdadero Entonces
 							Escribir "Especificar las anomalias que se presentaron con el filtro o especificar si fue cambio de este";
 							leer filtro;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						SiNo
 							Escribir "Describa la novedad encontrada en la motocicleta";
 							Leer novedad;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						FinSi
 					5:
 						Escribir "¿La moto solo tuvo problemas referente a la cadena?";
 						Escribir "(Responder Verdadero o Falso según el caso)";
 						leer respuesta;
+						Escribir "--------------------------------------------------------------";
 						Si respuesta = Verdadero Entonces
 							Escribir "Describa el problema presentado en la cadena";
 							leer cadenamoto;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						SiNo
 							Escribir "Describa la novedad encontrada en la motocicleta";
 							Leer novedad;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Guardado en el sistema";
 						FinSi
 						
@@ -146,6 +166,7 @@ Proceso Punto6_Taller2
 				Escribir "¿Desea darle salida a la moto?";
 				Escribir "(Escribir Verdadero o Falso, según el caso)";
 				Leer salida;
+				Limpiar Pantalla;
 				
 				Si salida = Verdadero Entonces
 					
@@ -153,17 +174,21 @@ Proceso Punto6_Taller2
 					Escribir "¿Hubo algun arreglo adicional hecho por parte del mecánico?";
 					Escribir "(Escribir Verdadero o Falso, según el caso)";
 					leer respuesta_arreglo;
+					Limpiar Pantalla;
 					
 					Si respuesta_arreglo = Verdadero Entonces
 						Escribir "Describa especificamente que arreglos necesitó";
 						leer arreglo;
+						Escribir "--------------------------------------------------------------";
 						Escribir "Al realizar el arreglo, ¿Necesitó hacer uso de repuestos?";
 						Escribir "(Escribir Verdadero o Falso, según el caso)";
 						Leer respuesta_repuestos;
+						Escribir "--------------------------------------------------------------";
 					
 						Si respuesta_repuestos = Verdadero Entonces
 							Escribir "Mencione los respuestos utilizados para el arreglo";
 							leer repuestos;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Motocicleta lista para darle salida";
 						SiNo
 							Escribir "Motocicleta lista para darle salida";
@@ -218,17 +243,21 @@ Proceso Punto6_Taller2
 					Escribir "¿Hubo algun arreglo adicional hecho por parte del mecánico?";
 					Escribir "(Escribir Verdadero o Falso, según el caso)";
 					leer respuesta_arreglo;
+					Limpiar Pantalla;
 					
 					Si respuesta_arreglo = Verdadero Entonces
 						Escribir "Describa especificamente que arreglos necesitó";
 						leer arreglo;
+						Escribir "--------------------------------------------------------------";
 						Escribir "Al realizar el arreglo, ¿Necesitó hacer uso de repuestos?";
 						Escribir "(Escribir Verdadero o Falso, según el caso)";
 						Leer respuesta_repuestos;
+						Escribir "--------------------------------------------------------------";
 						
 						Si respuesta_repuestos = Verdadero Entonces
 							Escribir "Mencione los respuestos utilizados para el arreglo";
 							leer repuestos;
+							Escribir "--------------------------------------------------------------";
 							Escribir "Motocicleta lista para darle salida";
 						SiNo
 							Escribir "Motocicleta lista para darle salida";
@@ -251,6 +280,5 @@ Proceso Punto6_Taller2
 		De Otro Modo:
 			Escribir "Opción incorrecta. Elija una opción que esté dentro del menú";
 	FinSegun
-	
 	
 FinProceso
