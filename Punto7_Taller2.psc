@@ -1,4 +1,4 @@
-Proceso sin_titulo
+Proceso Punto7_Taller2
 	
 	Definir nombre Como Caracter;
 	Definir documento Como Entero;
@@ -7,7 +7,7 @@ Proceso sin_titulo
 	Definir pasaporte Como Caracter;
 	Definir otroid Como Caracter;
 	Definir peso Como Real;
-	Definir estatura Como Real;
+	Definir estatura Como Real; 
 	Definir IMC Como Real;
 	
 	cedula <- 0;
@@ -16,7 +16,8 @@ Proceso sin_titulo
 	otroid <- "";
 
 	
-	Escribir "Secretaría de Salud Municipal";
+	Escribir "SECRETARÍA DE SALUD MUNICIPAL";
+	Escribir "-------------------------------------";
 	
 	Escribir "¿Cual es su nombre completo?";
 	Leer nombre;
