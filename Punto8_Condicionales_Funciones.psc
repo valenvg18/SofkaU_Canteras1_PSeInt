@@ -1,38 +1,20 @@
-Proceso Punto8_Taller2
-	
+Proceso Punto8_Condicionales_Funciones
 	Definir nombre Como Caracter;
 	Definir sabor Como Caracter;
 	Definir porcion Como Entero;
-	Definir decoracion Como Entero;
-	Definir cumpleanos Como Caracter;
-	Definir grados Como Caracter;
-	Definir boda Como Caracter;
-	Definir comunion Como Caracter;
-	Definir personalizar Como Caracter;
+	Definir decoracion Como Caracter;
 	Definir pago Como Entero;
+	Definir especificacionDeTorta Como Caracter;
 	
-	cumpleanos <- "";
-	grados <- "";
-	boda <- "";
-	comunion <- "";
-	personalizar <-"";
 	
 	Escribir "PASTELERÍA DON CARLOS";
 	
-	Escribir "Para realizar su pedido, por favor digite su nombre completo";
-	Leer nombre;
+	nombre <- preguntarCaracter("Para realizar su pedido, por favor digite su nombre completo");
 	
 	Escribir "A continuación podrá elegir la torta del sabor que desee, porciones y decoración";
-	Escribir "¿Que sabor de torta prefiere? (Escriba el sabor que desee)";
-	Escribir "1. Chocolate";
-	Escribir "2. Vainilla";
-	Escribir "3. Milo";
-	Escribir "4. Cheesecake";
-	Escribir "5. Combinada (Vainilla y Chocolate)";
+	sabor <- menuTipo_de_Torta("¿Que sabor de torta prefiere?", "Chocolate", "Vainilla", "Milo", "Cheesecake", "Combinada");
 	
-	Leer sabor;
 	
-
 	Escribir "¿De cuántas porciones desea su torta? (Escriba el número acorde a las porciones que necesite)";
 	Leer porcion;
 	Si porcion > 50 Entonces
@@ -42,31 +24,10 @@ Proceso Punto8_Taller2
 	FinSi
 	Escribir "---------------------------------------------------------------------";
 	
-	Escribir "¿Que tipo de decoración deseas para tu torta? (Elije el número de acuerdo a la torta que quieres)";
-	Escribir "1. Cumpleaños";
-	Escribir "2. Grados";
-	Escribir "3. Boda";
-	Escribir "4. Primera Comunión";
-	Escribir "5. Personalizada";
-	Leer decoracion;
+	decoracion <- menuTipo_de_Torta("¿Que tipo de decoración deseas para tu torta?", "Cumpleaños", "Grados", "Boda", "Primera Comunión", "Personalizada");
 	
-	Segun decoracion Hacer
-		1:
-			Escribir "Especifica como quisieras la torta tipo cumpleaños";
-			Leer cumpleanos;
-		2:
-			Escribir "Especifica como quisieras la torta tipo grados";
-			Leer grados;
-		3:
-			Escribir "Especifica como quisieras la torta tipo boda";
-			Leer boda;
-		4:
-			Escribir "Especifica como quisieras la torta tipo primera comunión";
-			Leer comunion;
-		De Otro Modo:
-			Escribir "Especifica como quisieras personalizar la torta";
-			Leer personalizar;
-	FinSegun
+	especificacionDeTorta <- especificarTorta(decoracion);
+	
 	
 	Limpiar Pantalla;
 	Escribir "Pedido realizado correctamente";	
@@ -75,65 +36,65 @@ Proceso Punto8_Taller2
 	Escribir "El pedido de ", nombre, " quedó de la siguiente forma:";
 	Escribir "- El sabor de torta que eligió fue: ", sabor;
 	Escribir "- El número de porciones de la torta fue: ", porcion;
-	Escribir "- La decoración elegida para torta fue: ", cumpleanos, grados, boda, comunion, personalizar;
-	
+	Escribir "- La decoración elegida para torta fue: ", especificacionDeTorta;
+;
 	Escribir "----------------------------------------------------------------";
 	
 	Si (porcion >= 1 y porcion <= 3) Entonces
-		Escribir "El costo de la torta es de: $12.000";
+		imprimirPrecio(12);
 	SiNo
 		Si (porcion >= 4 y porcion <= 7) Entonces
-			Escribir "El costo de la torta es de: $18.000";
+			imprimirPrecio(18);
 		FinSi
 		
 		Si (porcion >= 8 y porcion <= 11) Entonces
-			Escribir "El costo de la torta es de: $24.000";
+			imprimirPrecio(24);
 		FinSi
 		
 		Si (porcion >= 12 y porcion <= 15) Entonces
-			Escribir "El costo de la torta es de: $30.000";
+			imprimirPrecio(30);
 		FinSi
 		
 		Si (porcion >= 16 y porcion <= 19) Entonces
-			Escribir "El costo de la torta es de: $36.000";
+			imprimirPrecio(36);
 		FinSi
 		
 		Si (porcion >= 20 y porcion <= 23) Entonces
-			Escribir "El costo de la torta es de: $42.000";
+			imprimirPrecio(42);
 		FinSi
 		
 		Si (porcion >= 24 y porcion <= 27) Entonces
-			Escribir "El costo de la torta es de: $48.000";
+			imprimirPrecio(48);
 		FinSi
 		
 		Si (porcion >= 28 y porcion <= 31) Entonces
-			Escribir "El costo de la torta es de: $54.000";
+			imprimirPrecio(54);
 		FinSi
 		
 		Si (porcion >= 32 y porcion <= 35) Entonces
-			Escribir "El costo de la torta es de: $60.000";
+			imprimirPrecio(60);
 		FinSi
 		
 		Si (porcion >= 36 y porcion <= 39) Entonces
-			Escribir "El costo de la torta es de: $66.000";
+			imprimirPrecio(66);
 		FinSi
 		
 		Si (porcion >= 40 y porcion <= 43) Entonces
-			Escribir "El costo de la torta es de: $72.000";
+			imprimirPrecio(72);
 		FinSi
 		
 		Si (porcion >= 44 y porcion <= 47) Entonces
-			Escribir "El costo de la torta es de: $78.000";
+			imprimirPrecio(78);
 		FinSi
 		
 		Si (porcion >= 48 y porcion <= 50) Entonces
-			Escribir "El costo de la torta es de: $84.000";
+			imprimirPrecio(84);
 		FinSi
 		
 		
 	FinSi
 	
-	
+	Escribir "----------------------------------------------------------------";
 	Escribir "¿Cuál será el medio de pago?";
 	Escribir "1. Efectivo";
 	Escribir "2. Débito";
@@ -150,4 +111,33 @@ Proceso Punto8_Taller2
 		De Otro Modo:
 			Escribir "Pago RECHAZADO, escoja un medio de pago.";
 	FinSegun
+	
 FinProceso
+
+SubProceso persona <- preguntarCaracter(pregunta)
+	Definir persona Como Caracter;
+	Escribir pregunta;
+	Leer persona;
+FinSubProceso
+
+SubProceso torta <- especificarTorta(tipo)
+	Definir torta Como Caracter;
+	Escribir "Especifica como quisieras la torta tipo ", tipo;
+	Leer torta;
+FinSubProceso
+
+SubProceso eleccion <- menuTipo_de_Torta(caracteristica, c1, c2, c3, c4, c5)
+	Definir eleccion Como Caracter;
+	Escribir caracteristica;
+	Escribir "- ", c1;
+	Escribir "- ", c2;
+	Escribir "- ", c3;
+	Escribir "- ", c4;
+	Escribir "- ", c5;
+	Leer eleccion;
+FinSubProceso
+
+SubProceso imprimirPrecio(precio)
+	Escribir "El costo de la torta es de: $", precio, ".000";
+FinSubProceso
+

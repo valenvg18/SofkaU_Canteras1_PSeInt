@@ -1,4 +1,4 @@
-Proceso Punto7_Taller2
+Proceso Punto7_Condicionales_Funciones
 	
 	Definir nombre Como Caracter;
 	Definir documento Como Entero;
@@ -14,37 +14,30 @@ Proceso Punto7_Taller2
 	tarjetaidentidad <- 0;
 	pasaporte <- "";
 	otroid <- "";
-
 	
 	Escribir "SECRETARÍA DE SALUD MUNICIPAL";
 	Escribir "-------------------------------------";
 	
-	Escribir "¿Cual es su nombre completo?";
-	Leer nombre;
+	nombre <- preguntarCaracter("¿Cual es su nombre completo?");
 	
 	Escribir "¿Que tipo de documento posee?";
-	Escribir "1. Cedula de Ciudadanía";
-	Escribir "2. Tarjeta de Identidad";
+	Escribir "1. Cédula de ciudadanía";
+	Escribir "2. Tarjeta de identidad";
 	Escribir "3. Pasaporte";
 	Leer documento;
 	
 	Segun documento Hacer
 		1:
-			Escribir "Escriba su número de cédula";
-			Leer cedula;
+			cedula <- preguntarEntero("Escriba su número de cédula");
 		2:
-			Escribir "Escriba su numero de tarjeta de identidad";
-			Leer tarjetaidentidad;
+			tarjetaidentidad <- preguntarEntero("Escriba su numero de tarjeta de identidad");
 		3:
-			Escribir "Escriba su número de pasaporte";
-			Leer pasaporte;
+			pasaporte <- preguntarCaracter("Escriba su número de pasaporte");
 		De Otro Modo:
-			Escribir "Si posee algun otro ID, escríbalo por favor";
-			leer otroid;
+			otroid <- preguntarCaracter("Si posee algun otro ID, escríbalo por favor");
 	FinSegun
 	
-	Escribir "¿Cuál es tu peso en Kilogramos?";
-	Leer peso;
+	peso <- preguntarEntero("¿Cuál es tu peso en Kilogramos?");
 	
 	Escribir "¿Cuál es tu estatura en metros?";
 	Escribir "(Separe el decimal por medio de un punto)";
@@ -69,4 +62,18 @@ Proceso Punto7_Taller2
 			Escribir nombre, " ALERTA! usted se encuentra en estado de obesidad.";
 		FinSi
 	FinSi
+	
 FinProceso
+
+SubProceso persona <- preguntarCaracter(pregunta)
+	Definir persona Como Caracter;
+	Escribir pregunta;
+	Leer persona;
+FinSubProceso
+
+SubProceso persona <- preguntarEntero(pregunta)
+	Definir persona Como Entero;
+	Escribir pregunta;
+	Leer persona;
+FinSubProceso
+
