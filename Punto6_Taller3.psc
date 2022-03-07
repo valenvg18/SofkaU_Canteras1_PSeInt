@@ -1,4 +1,4 @@
-Proceso sin_titulo
+Proceso Punto6_Taller3
 	
 	Definir nombre1, nombre2, nombre3 Como Caracter;
 	Definir telefono1, telefono2, telefono3 Como Real;
@@ -30,11 +30,8 @@ Proceso sin_titulo
 		Escribir "=======================================================";
 		Escribir "PARA AGREGAR CONTACTO #", i;
 		Escribir "-------------------------------------------------------";
+		
 		Escribir "Escribe el nombre completo: ";
-		
-		
-		
-		
 		Si nombre1 = "" Entonces
 			leer nombre1;
 		SiNo
@@ -49,7 +46,6 @@ Proceso sin_titulo
 		
 		Escribir "¿Cuál es su número telefónico?";
 		
-	
 		leer numeroDeTelefono;
 		mientras (numeroDeTelefono = telefono1) O (numeroDeTelefono = telefono2) Hacer
 			Escribir "Este numero de telefono ya existe. Por favor ingrese otro:";
@@ -83,7 +79,6 @@ Proceso sin_titulo
 				FinSi
 			FinSi
 		FinSi
-		
 		
 	FinPara
 	
@@ -227,13 +222,9 @@ Proceso sin_titulo
 							organizacion3 <- "";
 							
 						FinSi
-						
 					FinSi
-					
 				FinSi
-				
 			3:
-				
 				Escribir "¡VUELVA PRONTO!";
 			De Otro Modo:
 				solictud <- 3;
