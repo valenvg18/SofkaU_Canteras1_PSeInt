@@ -1,4 +1,6 @@
-Proceso Punto3_Taller2
+Proceso Punto3_Condicionales
+	
+	Escribir "------REGISTRO ENTRADAS A LA FIESTA------";
 	
 	Definir nombre Como Caracter;
 	Definir apellidos Como Caracter;
@@ -7,7 +9,7 @@ Proceso Punto3_Taller2
 	Escribir "¿Cuál es tu nombre?";
 	Leer nombre;
 	
-	Escribir "Cuáles son tus apellidos?";
+	Escribir "¿Cuáles son tus apellidos?";
 	leer apellidos;
 	
 	Escribir "¿Cuál es tu edad?";
@@ -18,6 +20,7 @@ Proceso Punto3_Taller2
 	Si edad >= 18 Entonces
 		Escribir nombre, " ", apellidos, " Usted es mayor de edad, por lo tanto puede entrar a la fiesta";
 	SiNo
-		Escribir nombre, " ", apellidos, " Usted es menor de edad, por lo tanto no puede entrar a la fiesta. Por favor devuélvase a su casa"; 
+		Escribir nombre, " ", apellidos, " Usted es menor de edad, por lo tanto no puede entrar a la fiesta, por favor devuélvase a su casa."; 
 	FinSi
+	
 FinProceso

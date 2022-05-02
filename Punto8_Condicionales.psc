@@ -1,4 +1,4 @@
-Proceso Punto8_Taller2
+Proceso Punto8_Condicionales
 	
 	Definir nombre Como Caracter;
 	Definir sabor Como Caracter;
@@ -33,15 +33,15 @@ Proceso Punto8_Taller2
 	Leer sabor;
 	
 
-	Escribir "¿De cuántas porciones desea su torta? (Escriba el número acorde a las porciones que necesite)";
+	Escribir "¿De cuántas porciones desee que sea su torta? (Escriba el número acorde a las porciones que necesite)";
 	Leer porcion;
 	Si porcion > 50 Entonces
 		Escribir "En el momento no tenemos disponible tortas de más de 50 porciones.";
 	SiNo
 		Escribir "Perfecto! se añadirá a su pedido";
 	FinSi
-	Escribir "---------------------------------------------------------------------";
 	
+	Escribir "---------------------------------------------------------------------";
 	Escribir "¿Que tipo de decoración deseas para tu torta? (Elije el número de acuerdo a la torta que quieres)";
 	Escribir "1. Cumpleaños";
 	Escribir "2. Grados";
@@ -68,9 +68,8 @@ Proceso Punto8_Taller2
 			Leer personalizar;
 	FinSegun
 	
-	Limpiar Pantalla;
 	Escribir "Pedido realizado correctamente";	
-	Escribir "----------------------------------------------------------------";
+	Limpiar Pantalla;
 	
 	Escribir "El pedido de ", nombre, " quedó de la siguiente forma:";
 	Escribir "- El sabor de torta que eligió fue: ", sabor;

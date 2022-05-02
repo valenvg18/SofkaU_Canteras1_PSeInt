@@ -1,4 +1,4 @@
-Proceso Punto4_Taller2
+ Proceso Punto4_Condicionales
 	
 	Definir nombre Como Caracter;
 	Definir opcion Como Entero;
@@ -13,10 +13,13 @@ Proceso Punto4_Taller2
 	P4 <- "Matrix";
 	P5 <- "King Kong";
 	
-	Escribir "¿Cuál es tu nombre?";
+	Escribir "ALQUILER PELICULAS EL PROVENIR";
+	Escribir "---------------------------------";
+	
+	Escribir "¿Cuál es el nombre del usuario?";
 	Leer nombre;
 	
-	Escribir "Bienvenido ", nombre, " a la video tienda del Porvenir";
+	Escribir "Bienvenido(a) ", nombre, " a la video tienda del Porvenir";
 	
 	Escribir "Elije la opcion que deseas ver";
 	Escribir "1. Consultar peliculas disponibles";
@@ -24,14 +27,16 @@ Proceso Punto4_Taller2
 	Escribir "3. Entregar pelicula";
 	Leer opcion;
 	
+	Limpiar Pantalla;
+	
 	Segun opcion Hacer
 		1:
 			Escribir "Las peliculas disponibles en la video tienda son: "; 
-			Escribir "1. Los Avengers Endgame";
-			Escribir "2. Encanto";
-			Escribir "3. El Conjuro";
-			Escribir "4. Matrix";
-			Escribir "5. King Kong";
+			Escribir "1. ", P1;
+			Escribir "2. ", P2;
+			Escribir "3. ", P3;
+			Escribir "4. ", P4;
+			Escribir "5. ", P5;
 		2:
 			Escribir "¿Cuál pelicula deseas alquilar?";
 			Escribir "Las peliculas disponibles en la video tienda son: "; 

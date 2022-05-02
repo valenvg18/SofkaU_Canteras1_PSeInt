@@ -1,10 +1,11 @@
-Proceso Punto5_Taller2
+Proceso Punto5_Condicionales
 	
 	Escribir "BIENVENIDO A LA DROGUERÍA MI SALUD";
+	Escribir "-----------------------------------------";
 	
 	Definir categoriaproducto Como Entero;
 	Definir medicamentos como Entero; 
-	Definir opcion Como Caracter;
+	Definir opcion, razonDevolucion Como Caracter;
 	Definir Advil, Dolex, Pax, Acetaminofen, Noxpirin, Ibuprofeno, Desodorante, Shampoo Como Caracter;
 	Definir solicitud Como entero;
 	Definir devolucion Como Entero;
@@ -23,6 +24,8 @@ Proceso Punto5_Taller2
 	Escribir "2. Devolución de un producto";
 	leer solicitud;
 	
+	Limpiar Pantalla;
+	
 	Si solicitud = 1 Entonces
 		
 		Escribir "¿Que categoría de productos quisieras ver?";
@@ -34,13 +37,15 @@ Proceso Punto5_Taller2
 		
 		leer categoriaproducto;
 		
+		Escribir "------------------------------------------------------------------";
+		
 		
 		Segun categoriaproducto Hacer
 			1:
 				Escribir "Los medicamentos disponibles para el dolor de cabeza son:";
 				Escribir "1. Advil";
 				Escribir "2. Dolex";
-				Escribir "Si deseas comprar alguno de estos productos, escribe 1 o 2 según el que necesites";
+				Escribir "Escribe 1 o 2 según el que necesites, para saber el precio";
 				leer medicamentos;
 				
 				Segun medicamentos Hacer
@@ -48,7 +53,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Advil es: ", Advil;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -57,7 +62,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Dolex es: ", Dolex;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -70,7 +75,7 @@ Proceso Punto5_Taller2
 				Escribir "Los medicamentos disponibles para la gripa son:";
 				Escribir "1. Pax";
 				Escribir "2. Noxpirin";
-				Escribir "Si deseas comprar alguno de estos productos, escribe 1 o 2 según el que necesites";
+				Escribir "Escribe 1 o 2 según el que necesites, para saber el precio";
 				leer medicamentos;
 				
 				Segun medicamentos Hacer
@@ -78,7 +83,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Pax es: ", Pax;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -87,7 +92,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Noxpirin es: ", Noxpirin;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -100,7 +105,7 @@ Proceso Punto5_Taller2
 				Escribir "Los medicamentos disponibles para el malestar en general son:";
 				Escribir "1. Acetaminofen";
 				Escribir "2. Ibuprofeno";
-				Escribir "Si deseas comprar alguno de estos productos, escribe 1 o 2 según el que necesites";
+				Escribir "Escribe 1 o 2 según el que necesites, para saber el precio";
 				leer medicamentos;
 				
 				Segun medicamentos Hacer
@@ -108,7 +113,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Acetaminofen es: ", Acetaminofen;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -117,7 +122,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Ibuprofeno es: ", Ibuprofeno;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -130,7 +135,7 @@ Proceso Punto5_Taller2
 				Escribir "Los productos disponibles para el cuidado e higiene personal son:";
 				Escribir "1. Desodorante";
 				Escribir "2. Shampoo para el cabello";
-				Escribir "Si deseas comprar alguno de estos productos, escribe 1 o 2 según el que necesites";
+				Escribir "Escribe 1 o 2 según el que necesites, para saber el precio";
 				leer medicamentos;
 				
 				Segun medicamentos Hacer
@@ -138,7 +143,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Desodorante es: ", Desodorante;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -147,7 +152,7 @@ Proceso Punto5_Taller2
 						Escribir "El precio del Shampoo para el cabello es: ", Shampoo;
 						Escribir "¿Deseas comprarlo?";
 						leer opcion;
-						Si (opcion = "si") o (opcion = "Si")  Entonces
+						Si (opcion = "si") o (opcion = "Si") o (opcion = "SI") Entonces
 							Escribir "HECHO! Producto comprado";
 						SiNo
 							Escribir "Puedes mirar otros productos";
@@ -173,23 +178,42 @@ Proceso Punto5_Taller2
 		
 		leer devolucion;
 		
+		Escribir "¿Por qué desea realizar la devolución?";
+		Leer razonDevolucion;
+		
 		Segun devolucion Hacer
 			1:
-				Escribir "Advil en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Advil en proceso de devolución porque: ", razonDevolucion;
+				Escribir "----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			2:
-				Escribir "Dolex en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Dolex en proceso de devolución porque: ", razonDevolucion;
+				Escribir "----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			3:
-				Escribir "Pax en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Pax en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			4:
-				Escribir "Noxpirin en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Noxpirin en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			5:
-				Escribir "Acetaminofen en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Acetaminofen en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			6:
-				Escribir "Ibuprofeno en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Ibuprofeno en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			7:
-				Escribir "Desodorante en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Desodorante en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 			8:
-				Escribir "Shampoo en proceso de devolución, en unos instantes le daremos información sobre su solicitud. GRACIAS";
+				Escribir "Shampoo en proceso de devolución porque: ", razonDevolucion;
+				Escribir "-----------------------------------------------------------------------------";
+				Escribir "En unos instantes le daremos información sobre su solicitud. GRACIAS";
 				
 			De Otro Modo:
 				Escribir "Devolución no válida";

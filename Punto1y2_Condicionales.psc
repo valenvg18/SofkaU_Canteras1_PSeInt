@@ -1,4 +1,4 @@
-Proceso Punto1y2_Taller2
+Proceso Punto1y2_Condicionales
 	
 	Definir edad Como Entero;
 	
@@ -8,7 +8,7 @@ Proceso Punto1y2_Taller2
 	Si edad >= 18 Entonces
 		Escribir "Usted es mayor de edad";
 	SiNo
-		Escribir "Usted aún es un niño";
+		Escribir "Usted aún es un niño(a)";
 	FinSi
 	
 FinProceso

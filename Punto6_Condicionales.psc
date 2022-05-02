@@ -1,4 +1,4 @@
-Proceso Punto6_Taller2
+Proceso Punto6_Condicionales
 	
 	Definir solicitud Como Entero;
 	Definir cilindraje Como Entero;
@@ -33,7 +33,7 @@ Proceso Punto6_Taller2
 	respuesta <- Falso;
 	respuesta1 <- Falso;
 	respuesta_arreglo <- Falso;
-	salida <- Falso;
+	salida <- Verdadero;
 	
 	
 	Escribir "TALLER DE MOTOS EL MAQUINISTA";
@@ -168,7 +168,7 @@ Proceso Punto6_Taller2
 				Leer salida;
 				Limpiar Pantalla;
 				
-				Si salida = Verdadero Entonces
+				Si salida = Falso Entonces
 					
 				
 					Escribir "¿Hubo algun arreglo adicional hecho por parte del mecánico?";
@@ -203,17 +203,19 @@ Proceso Punto6_Taller2
 				SiNo
 					Escribir "Motocicleta lista para darle salida";
 				FinSi
+				Escribir "----------------------------------------------------------------------------------";
 				
 				Escribir "Al propietario ", nombre, " de la moto de marca ", marca, " modelo ", modelo, " con cilindraje de ", cilindraje, " y placa ", placa, ".";
 				Escribir "Se le informa, que de acuerdo a las observaciones dadas: ", observaciones;
-				Escribir "Se realizó el siguiente trabajo adicional:";
+				Escribir "Se realizó el siguiente trabajo:";
 				Escribir "1. ", mantenimiento, motor, frenos, filtro, cadenamoto, novedad;
 				Escribir "2. ", arreglo;
 				Escribir "3. Y si hubo uilización de repuestos: ", repuestos;
+				Escribir "--------------------------------------------------------------";
 				Escribir "LISTO! Estamos a su servicio.";
 				
 			SiNo
-				Escribir "Esta moto no puede ingresar al taller EL MAQUINISTA";	
+				Escribir "Esta moto no puede ingresar al taller EL MAQUINISTA porque no es de alto cilindraje";	
 			FinSi
 			
 			
@@ -267,10 +269,13 @@ Proceso Punto6_Taller2
 						Escribir "Motocicleta lista para darle salida";
 					FinSi
 					
+					Escribir "----------------------------------------------------------------------------------";
+					
 					Escribir "Al propietario ", nombre, " de la moto de marca ", marca, " modelo ", modelo, " con cilindraje de ", cilindraje, " y placa ", placa, ".";
 					Escribir "Se le informa, que de acuerdo a las observaciones dadas y al darle salida a la moto se encontro lo siguiente: ";
 					Escribir "- ", arreglo, "...LISTO";
 					Escribir "- ", repuestos, "...LISTO";
+					Escribir "--------------------------------------------------------------";
 					Escribir "Estamos a su servicio.";
 					
 				SiNo

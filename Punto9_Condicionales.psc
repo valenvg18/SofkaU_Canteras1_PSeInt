@@ -1,4 +1,4 @@
-Proceso Punto9_Taller2
+Proceso Punto9_Condicionales
 	
 	Definir figura Como Entero;
 	Definir Arectangulo Como Real;

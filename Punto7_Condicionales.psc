@@ -1,4 +1,4 @@
-Proceso Punto7_Taller2
+Proceso Punto7_Condicionales
 	
 	Definir nombre Como Caracter;
 	Definir documento Como Entero;
@@ -7,7 +7,7 @@ Proceso Punto7_Taller2
 	Definir pasaporte Como Caracter;
 	Definir otroid Como Caracter;
 	Definir peso Como Real;
-	Definir estatura Como Real; 
+	Definir estatura Como Real;
 	Definir IMC Como Real;
 	
 	cedula <- 0;
@@ -17,8 +17,7 @@ Proceso Punto7_Taller2
 
 	
 	Escribir "SECRETARÍA DE SALUD MUNICIPAL";
-	Escribir "-------------------------------------";
-	
+	Escribir "------------------------------------";
 	Escribir "¿Cual es su nombre completo?";
 	Leer nombre;
 	
@@ -51,6 +50,8 @@ Proceso Punto7_Taller2
 	Leer estatura;
 	
 	IMC <- peso/(estatura)^2;
+	
+	Escribir "------------------------------------------------------------------------";
 	
 	Escribir "Su Índice de Masa Corporal (IMC) es: ", IMC;
 	
